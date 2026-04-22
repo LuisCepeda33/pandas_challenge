@@ -22,18 +22,7 @@ def create_store_reference() -> pd.DataFrame:
     - S003, Alameda, Merida, South, 1
     """
     # TODO: Replace the placeholder implementation.
-
-    store_reference = pd.DataFrame(
-        {
-            "store_name": ["Centro", "Plaza", "Alameda"],
-            "city": ["Monterrey", "Guadalajara", "Merida"],
-            "region": ["North", "West", "South"],
-            "store_count": [1, 2, 1],
-        },
-        index=["S001", "S002", "S003"],
-    )
-    store_reference.index.name = "store_id"
-    return store_reference
+    raise NotImplementedError("Implement create_store_reference")
 
 
 
@@ -45,14 +34,7 @@ def load_raw_datasets(data_dir: str | Path = "data/raw") -> tuple[pd.DataFrame, 
     customers, products, orders, order_items
     """
     # TODO: Replace the placeholder implementation.
-    data_dir = Path(data_dir)
-
-    customers = pd.read_csv(data_dir / "customers.csv")
-    products = pd.read_csv(data_dir / "products.csv")
-    orders = pd.read_csv(data_dir / "orders.csv")
-    order_items = pd.read_csv(data_dir / "order_items.csv")
-
-    return customers, products, orders, order_items
+    raise NotImplementedError("Implement load_raw_datasets")
 
 
 def filter_high_value_orders(orders: pd.DataFrame) -> pd.DataFrame:
