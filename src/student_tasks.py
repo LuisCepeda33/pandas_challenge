@@ -5,6 +5,8 @@ import pandas as pd
 
 def create_store_reference() -> pd.DataFrame:
     """
+    This is a test
+    
     Build a DataFrame from scratch with these exact values and index labels.
 
     Index name: store_id
